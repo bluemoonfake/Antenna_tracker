@@ -1,0 +1,15 @@
+# Local FreeRTOS build output and generated firmware artifacts.
+/build/
+uav_payload-main/
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+*.map
+
+# Downloaded toolchain/library checkouts and per-user agent configuration.
+/.deps/
+/.codex/
+/.vscode/
+/.agents/skills/

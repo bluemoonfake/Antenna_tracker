@@ -1,0 +1,190 @@
+{
+  "recovered_at_utc": "2026-09-27T04:50:36.978649+00:00",
+  "source_tree": "b2dedb3dfd3ecc815d35d55ac22d3c79d2612687",
+  "source_kind": "unreachable Git tree, no commit HEAD",
+  "files": [
+    {
+      "path": "freertos/CMakeLists.txt",
+      "git_blob": "583eb7c001298dd5b4899d899448dcd9e50d3a7f",
+      "mode": "100644",
+      "sha256": "8bd9542921a5b11360f8aa8f6e6f119790c6c021d7156ad78ffb18628de1b14c"
+    },
+    {
+      "path": "freertos/build.sh",
+      "git_blob": "b88ab2fa43d7abf61dff307e50b077c698b075ca",
+      "mode": "100755",
+      "sha256": "f9feb64718db98beb532ef086b61181313c305a787e86b072ca3e1308e4756ee"
+    },
+    {
+      "path": "freertos/cmake/arm-none-eabi.cmake",
+      "git_blob": "b260a230b1f3d3c6bf37cbac19728f3c21bf3579",
+      "mode": "100644",
+      "sha256": "d318385260f0d79ce82108733f1a3edd762598063d50507c6b5819d8ce04161b"
+    },
+    {
+      "path": "freertos/fetch_dependencies.sh",
+      "git_blob": "e83b746ab9cf606965f53e084b7b7c94c4ea9281",
+      "mode": "100755",
+      "sha256": "db1c2ad4a86887c904dc2357a9b3906b3a079aca77af0bb7f696142020bbc929"
+    },
+    {
+      "path": "freertos/include/FreeRTOSConfig.h",
+      "git_blob": "828c8ff8cbe173600c8a9460a00ed050189cd87f",
+      "mode": "100644",
+      "sha256": "e6804fd0f0b79f637078636fc80c86588f6c0eeb71554594b080600078458606"
+    },
+    {
+      "path": "freertos/include/app_state.h",
+      "git_blob": "7ed67a7a929c4a7fa74d84ed6f6d2623398fe4a8",
+      "mode": "100644",
+      "sha256": "130e51e9f3d582cc30281c6e5ddb4003542ccaac45f4e6db85ca7630d49dd383"
+    },
+    {
+      "path": "freertos/include/board.h",
+      "git_blob": "a1483f7f61c44599ae71f1f4a457d7287ddbdfe3",
+      "mode": "100644",
+      "sha256": "f39093020ac4ac3e872fef0d676b7fe3b15d8e70f13bf959feadfa95b81f23b9"
+    },
+    {
+      "path": "freertos/include/gps_ubx.h",
+      "git_blob": "00acaca555373d26c8f3c9d96e6930482c9f6629",
+      "mode": "100644",
+      "sha256": "dce4b43a789ec34fbef233f3840851fb950d1c98cb735d27e177db88f4515e10"
+    },
+    {
+      "path": "freertos/include/stm32h7xx_hal_conf.h",
+      "git_blob": "4d6cb832e9cf058520234507914a32d823bc9fe8",
+      "mode": "100644",
+      "sha256": "caa71b84ba66db330f48a9e6bbe06b76daa609bcf62db8d540936fbcba3c1916"
+    },
+    {
+      "path": "freertos/include/tracker_config.h",
+      "git_blob": "ee808383e0c3f122d52dd3adecb180b6cb44b509",
+      "mode": "100644",
+      "sha256": "6125bceb2be0431822c8b39ffc20b3d55908e1a8d1484d37e098bd550ff195c6"
+    },
+    {
+      "path": "freertos/include/tracker_math.h",
+      "git_blob": "ba03c1e5c7159ccdce078cb80e58617b9463f4a8",
+      "mode": "100644",
+      "sha256": "677b1b45e066134d993fd6a1b64f74e0aa2f8719e70bf528a1871255bb96eab2"
+    },
+    {
+      "path": "freertos/include/tracker_tasks.h",
+      "git_blob": "3501fc38aac184fc45b9e46d132a7d233db460fd",
+      "mode": "100644",
+      "sha256": "25e1bb66b28a8813e0e703cd28b8baa8cf0f374b74b274104050320dce4a458c"
+    },
+    {
+      "path": "freertos/include/usb_device.h",
+      "git_blob": "ca66c8e3103ea6d9b25873d2cf3224af8ee6682c",
+      "mode": "100644",
+      "sha256": "94e0ef6d39003c15b8ebd64c13372240aad87d2c7059a2387295640c9bf4ccf6"
+    },
+    {
+      "path": "freertos/include/usbd_conf.h",
+      "git_blob": "4fc5e24cbd8d686409421a9d1d21b5efadc5bd56",
+      "mode": "100644",
+      "sha256": "2991a5c89d5479b08e8e0e031f57806c8fae805534d8149509f4f37a5471125e"
+    },
+    {
+      "path": "freertos/include/usbd_desc.h",
+      "git_blob": "d4cd8c35c6671cb4173b7779b62e8cc1da556a74",
+      "mode": "100644",
+      "sha256": "8b5abeefdd8c965a841e56bbea8c25c69c39055c8d94021c8a7f4b289ea99803"
+    },
+    {
+      "path": "freertos/linker/microair_h743_app.ld",
+      "git_blob": "c1517cec55543093f64f9656a0573118a4248869",
+      "mode": "100644",
+      "sha256": "bf771868ec88048a848776afa799e47f19b2a8a88157ef68b3718dc0d32e3b59"
+    },
+    {
+      "path": "freertos/src/app_state.c",
+      "git_blob": "3e663f764fd4b1f8e32ee8bb0bb863fa03dfd0cf",
+      "mode": "100644",
+      "sha256": "3f7ae929538b24fe9a1c4385ebf882f13e98db1393f3ce7d77269ac93b419b26"
+    },
+    {
+      "path": "freertos/src/board.c",
+      "git_blob": "8f8ab8119e2043037f6827410a8858381f2526fa",
+      "mode": "100644",
+      "sha256": "2d437a3bfa457d04e78557d746274b94189a06e9bb2ee55d4e6804b7199bad79"
+    },
+    {
+      "path": "freertos/src/gps_ubx.c",
+      "git_blob": "83c67a5ba512c491bcff33c12eac8058e71e8ee2",
+      "mode": "100644",
+      "sha256": "495fb33aa87899f5b5ebd190f124b184c1d6a0c14028a958950cd7eff2e4a956"
+    },
+    {
+      "path": "freertos/src/interrupts.c",
+      "git_blob": "4a96c227664ca94681e10496f77aa821589ec84b",
+      "mode": "100644",
+      "sha256": "e1b31b857f677f541058feabd99fde8ce0e512975a2feb6652ee378e4d722d74"
+    },
+    {
+      "path": "freertos/src/main.c",
+      "git_blob": "b2c3c208155d2b3d851f18836b671b724725455d",
+      "mode": "100644",
+      "sha256": "cbd98289dac3471dc31e5b7c3cf1c3cbfbd9194207eeacbf77ff80fa394856e7"
+    },
+    {
+      "path": "freertos/src/mavlink_bridge_task.c",
+      "git_blob": "103a69b2406579eec99aac1860c96fcd82bd6949",
+      "mode": "100644",
+      "sha256": "2144aed23be005b74cac3df1349d87602ab62af34aed8706c64f23276da465fd"
+    },
+    {
+      "path": "freertos/src/sensor_task.c",
+      "git_blob": "15a05fe0c785c8c93976208060b7ccaa74dde524",
+      "mode": "100644",
+      "sha256": "f242650073dc7a3fa77819c3d69fd3bbb673e172210c3955a8988a47a1fccbfc"
+    },
+    {
+      "path": "freertos/src/tracker_control_task.c",
+      "git_blob": "e44deca999fe6386d0aa3469238e489c284c8ec7",
+      "mode": "100644",
+      "sha256": "a4d73ccf4dd47ea2da309b191bcc40b14085e4f9496ac0fbb1d391bec17aeee0"
+    },
+    {
+      "path": "freertos/src/tracker_math.c",
+      "git_blob": "2c31d5ca1814dd860ea5631dfcbcea2b00588a12",
+      "mode": "100644",
+      "sha256": "70a32765d71fe9c5de0f6060d6c92dc661efb3cae8feb13447fbe26412b0338a"
+    },
+    {
+      "path": "freertos/src/usb_device.c",
+      "git_blob": "b58b1ea74d252864266a11dd3a5ba7861850da27",
+      "mode": "100644",
+      "sha256": "e43627e2d916c556138b386b43ef522bbfe40ad28d62681a5aa5cd13fc1e3f2e"
+    },
+    {
+      "path": "freertos/src/usbd_conf.c",
+      "git_blob": "67118e291e721eea66aaed25eb6eef7d2a12c647",
+      "mode": "100644",
+      "sha256": "68de28bb53f83698b8e8b07f7ba5893bcf60fc129b7e81feaff13b71e7b75ab3"
+    },
+    {
+      "path": "freertos/src/usbd_desc.c",
+      "git_blob": "45eb89ac231b4a204a9697ad772997c4c21610cc",
+      "mode": "100644",
+      "sha256": "4faba310f77cbb1c82c239d539a3bc24bbe2794d06d6562dce1d46c0fab341c8"
+    }
+  ],
+  "dependencies": {
+    "cmsis_5": "2b7495b8535bdcb306dac29b9ded4cfb679d7e5c",
+    "cmsis_device_h7": "8f922cdc7cc6de2344e75ddd657889f4ff761790",
+    "stm32h7xx_hal_driver": "a1996eed9172b59887bafaaa0ea1816ea14d48b5",
+    "freertos_kernel": "9b777ae5c5b8e9e456065a00294d1e5f5f9facf5",
+    "stm32_usb_device": "0b06460a43c30670a764cb7e58c5a7918e789f6e"
+  },
+  "baseline_build": {
+    "binary_size_bytes": 92668,
+    "binary_sha256": "687953ce8779312110b8943fcb9c7575c6ad4b58ebc0d467360891b93c349e11",
+    "matches_existing_binary_byte_for_byte": true,
+    "hardware_verified": false,
+    "log": "build/freertos-recovery-build.log"
+  },
+  "baseline_archive": "/home/ubuntu/Dev/PX4_tracker/artifacts/Antenna_tracker/freertos-recovery-20260927T045304Z/recovered-source.tar.gz"
+}
