@@ -288,14 +288,17 @@ remaining M1 checks above are still outstanding for full board acceptance.
 ./freertos/tests/run.sh
 ```
 
-### M3 — Sensor and tracker state: pending
+### M3 — Sensor and tracker state: software implemented; hardware validation pending
 
-- Validate each bus/device separately, then timestamps and sample freshness.
-- Port BMI088 roll/pitch estimation and calibrated QMC5883L heading with their
-  actual mounting frames. The recovered sensor task only reads GPS and a raw
-  compass heading; it does not implement IMU attitude estimation.
-- Verify tracker GPS lock, heading calibration/orientation/declination and
-  invalid/stale sensor behavior before using them for pointing.
+- The recovered profile reads GPS, QMC5883L compass and BMI088. Its sensor task
+  uses `common/attitude/attitude.cpp` to estimate roll/pitch from BMI088 samples
+  and updates attitude in app state. It invalidates sensor state on read failure;
+  the control task also checks sample age before pointing. Host tests cover
+  roll/pitch estimation and sensor invalidation/recovery.
+- Validate each bus/device, timestamps, sample freshness and tracker GPS lock
+  on hardware. Verify compass mounting, calibration, orientation and declination;
+  heading still uses raw `atan2(y, x)` without installation calibration.
+- M3 hardware acceptance remains pending.
 
 ### M4 — PWM: pending
 

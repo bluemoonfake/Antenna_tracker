@@ -24,7 +24,7 @@
 #define SENSOR_DIAG_MS        500U
 #define RAD_TO_DEG            57.295779513082320876f
 
-//Task thu thap cam bien: doc GPS, IMU, Compass
+// Task thu thap cam bien: doc GPS, IMU, Compass
 volatile sensor_diagnostics_t g_sensor_diagnostics;
 
 static int16_t read_i16(const uint8_t *data)
@@ -225,7 +225,7 @@ static void gps_update(gps_ubx_parser_t *parser, gps_ubx_position_t *position, u
 
 static void sensor_task(void *argument)
 {
-  //khoi tao UBX parser
+  // khoi tao UBX parser
   gps_ubx_parser_t parser;
   gps_ubx_position_t position = {0};
   struct attitude_params_s attitude_params;
@@ -242,14 +242,14 @@ static void sensor_task(void *argument)
   gps_ubx_init(&parser);
   attitude_params_bmi088_default(&attitude_params);
   attitude_init(&attitude, &attitude_params);
-  //delay 100ms de init
+  // delay 100ms de init
   vTaskDelay(pdMS_TO_TICKS(100U));
-  //chon thoi diem init
+  // chon thoi diem init
   last_compass_init_ms = board_millis();
   compass_init();
   last_bmi088_init_ms = board_millis();
   bmi088_init();
-  last_sample_tick = xTaskGetTickCount(); //tra ve so tick da troi qua ke tu khi scheduler
+  last_sample_tick = xTaskGetTickCount();
   last_diagnostics_ms = board_millis();
   previous_ms = last_diagnostics_ms;
   for (;;)

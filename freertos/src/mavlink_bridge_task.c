@@ -120,7 +120,7 @@ mavlink_bridge_task(void *argument)
       g_bridge_status.usb_link_changes++;
     }
     g_bridge_status.usb_configured = connected;
-    uint32_t new_loss = g_bridge_io_status.uart_rx_dropped_bytes + g_bridge_io_status.uart_errors;  //loss = so byte drop + so byte loi UART
+    uint32_t new_loss = g_bridge_io_status.uart_rx_dropped_bytes + g_bridge_io_status.uart_errors;
     if (new_loss != rx_loss)
     {
       rx_loss = new_loss;
